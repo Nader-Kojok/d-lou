@@ -1,13 +1,19 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="relative z-10 py-20 px-6 bg-[#04692F]">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative z-10 py-20 px-6 bg-[#04692F] overflow-hidden parallax-container">
+      {/* Parallax decorative elements */}
+      <div className="parallax-element top-10 right-10 w-32 h-32 bg-white/5 rounded-full animate-parallax-slow animate-delay-200"></div>
+      <div className="parallax-element bottom-20 left-20 w-24 h-24 bg-white/10 rounded-full animate-parallax-medium animate-delay-400"></div>
+      <div className="parallax-element top-1/2 right-1/4 w-16 h-16 bg-white/5 rounded-full animate-float animate-delay-600"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fade-in-left">
             <h2 className="text-4xl font-bold text-white font-poppins">
               Pourquoi choisir D-LOU Legal Consulting ?
             </h2>
@@ -55,31 +61,33 @@ export default function About() {
               </div>
             </div>
             
-            <Button className="bg-white hover:bg-white/90 text-[#04692F] px-8 py-3 text-lg font-semibold font-cabin rounded-lg">
-              Planifier une consultation
-            </Button>
+            <Link href="/about">
+              <Button className="bg-white hover:bg-white/90 text-[#04692F] px-8 py-3 text-lg font-semibold font-cabin rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:-translate-y-1 active:scale-95 group">
+                <span className="transition-transform duration-300 group-hover:translate-x-1">En savoir plus sur nous</span>
+              </Button>
+            </Link>
           </div>
           
           {/* Right Content - Stats Cards */}
-          <div className="grid grid-cols-2 gap-6">
-            <Card className="p-6 bg-white shadow-lg border-0 rounded-xl text-center">
-              <div className="text-3xl font-bold text-[#04692F] font-poppins mb-2">150+</div>
-              <p className="text-gray-600 font-cabin">Projets accompagnés</p>
+          <div className="grid grid-cols-2 gap-6 animate-fade-in-right">
+            <Card className="p-6 bg-white shadow-lg border-0 rounded-xl text-center hover-lift hover-glow group cursor-pointer animate-scale-in animate-delay-100">
+              <div className="text-3xl font-bold text-[#04692F] font-poppins mb-2 transition-transform duration-300 group-hover:scale-110">150+</div>
+              <p className="text-gray-600 font-cabin transition-colors duration-300 group-hover:text-[#04692F]">Projets accompagnés</p>
             </Card>
             
-            <Card className="p-6 bg-white shadow-lg border-0 rounded-xl text-center">
-              <div className="text-3xl font-bold text-[#04692F] font-poppins mb-2">95%</div>
-              <p className="text-gray-600 font-cabin">Taux de réussite</p>
+            <Card className="p-6 bg-white shadow-lg border-0 rounded-xl text-center hover-lift hover-glow group cursor-pointer animate-scale-in animate-delay-200">
+              <div className="text-3xl font-bold text-[#04692F] font-poppins mb-2 transition-transform duration-300 group-hover:scale-110">95%</div>
+              <p className="text-gray-600 font-cabin transition-colors duration-300 group-hover:text-[#04692F]">Taux de réussite</p>
             </Card>
             
-            <Card className="p-6 bg-white shadow-lg border-0 rounded-xl text-center">
-              <div className="text-3xl font-bold text-[#04692F] font-poppins mb-2">10+</div>
-              <p className="text-gray-600 font-cabin">Années d&apos;expérience</p>
+            <Card className="p-6 bg-white shadow-lg border-0 rounded-xl text-center hover-lift hover-glow group cursor-pointer animate-scale-in animate-delay-300">
+              <div className="text-3xl font-bold text-[#04692F] font-poppins mb-2 transition-transform duration-300 group-hover:scale-110">10+</div>
+              <p className="text-gray-600 font-cabin transition-colors duration-300 group-hover:text-[#04692F]">Années d&apos;expérience</p>
             </Card>
             
-            <Card className="p-6 bg-white shadow-lg border-0 rounded-xl text-center">
-              <div className="text-3xl font-bold text-[#04692F] font-poppins mb-2">24/7</div>
-              <p className="text-gray-600 font-cabin">Support disponible</p>
+            <Card className="p-6 bg-white shadow-lg border-0 rounded-xl text-center hover-lift hover-glow group cursor-pointer animate-scale-in animate-delay-400">
+              <div className="text-3xl font-bold text-[#04692F] font-poppins mb-2 transition-transform duration-300 group-hover:scale-110">24/7</div>
+              <p className="text-gray-600 font-cabin transition-colors duration-300 group-hover:text-[#04692F]">Support disponible</p>
             </Card>
           </div>
         </div>

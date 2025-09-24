@@ -2,20 +2,24 @@ import { Card } from "@/components/ui/card";
 
 export default function Testimonials() {
   return (
-    <section className="relative z-10 py-20 px-6 bg-[#1E1E1E]">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-6 font-poppins">
+    <section className="relative z-10 py-20 px-6 bg-[#1E1E1E] parallax-container">
+      {/* Parallax decorative elements */}
+      <div className="parallax-element top-16 right-16 w-20 h-20 bg-white/5 rounded-full animate-parallax-slow animate-delay-200"></div>
+      <div className="parallax-element bottom-24 left-24 w-16 h-16 bg-white/10 rounded-full animate-parallax-medium animate-delay-400"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-16 animate-fade-in-up">
+          <h2 className="text-4xl font-bold text-white mb-6 font-poppins animate-slide-in-bottom">
             Ce que disent nos clients
           </h2>
-          <p className="text-lg text-gray-300 max-w-4xl mx-auto font-cabin leading-relaxed">
+          <p className="text-lg text-gray-300 max-w-4xl mx-auto font-cabin leading-relaxed animate-fade-in-up animate-delay-200">
             Découvrez les témoignages de nos clients qui ont fait confiance à D-LOU Legal Consulting 
             pour leurs projets d&apos;investissement et d&apos;installation au Sénégal.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow border-0 rounded-xl">
+          <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 rounded-xl hover-lift animate-scale-in animate-delay-300">
             <div className="space-y-4">
               <div className="flex items-center space-x-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -43,7 +47,7 @@ export default function Testimonials() {
             </div>
           </Card>
 
-          <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow border-0 rounded-xl">
+          <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 rounded-xl hover-lift animate-scale-in animate-delay-400">
             <div className="space-y-4">
               <div className="flex items-center space-x-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -71,7 +75,7 @@ export default function Testimonials() {
             </div>
           </Card>
 
-          <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow border-0 rounded-xl">
+          <Card className="p-8 bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 rounded-xl hover-lift animate-scale-in animate-delay-500">
             <div className="space-y-4">
               <div className="flex items-center space-x-1 mb-4">
                 {[...Array(5)].map((_, i) => (

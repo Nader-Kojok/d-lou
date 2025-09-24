@@ -1,21 +1,25 @@
 export default function Process() {
   return (
-    <section className="relative z-10 py-20 px-6 bg-[#04692F]">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative z-10 py-20 px-6 bg-[#04692F] parallax-container">
+      {/* Parallax decorative elements */}
+      <div className="parallax-element top-20 right-20 w-28 h-28 bg-white/5 rounded-full animate-parallax-slow animate-delay-200"></div>
+      <div className="parallax-element bottom-20 left-20 w-20 h-20 bg-white/10 rounded-full animate-parallax-medium animate-delay-400"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
-            <h2 className="text-4xl font-bold text-white font-poppins leading-tight">
+          <div className="space-y-8 animate-fade-in-left">
+            <h2 className="text-4xl font-bold text-white font-poppins leading-tight animate-slide-in-bottom">
               Comprendre notre processus de conseil juridique
             </h2>
           </div>
           
           {/* Right Content - Process Steps */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-fade-in-right">
             {/* Step 1 */}
-            <div className="flex items-start space-x-6">
+            <div className="flex items-start space-x-6 animate-scale-in animate-delay-300 hover-lift transition-all duration-300">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 animate-pulse-glow">
                   <svg className="w-8 h-8 text-[#04692F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                   </svg>
@@ -34,7 +38,7 @@ export default function Process() {
             </div>
 
             {/* Step 2 */}
-            <div className="flex items-start space-x-6">
+            <div className="flex items-start space-x-6 animate-scale-in animate-delay-400 hover-lift transition-all duration-300">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
                   <svg className="w-8 h-8 text-[#04692F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,7 +59,7 @@ export default function Process() {
             </div>
 
             {/* Step 3 */}
-            <div className="flex items-start space-x-6">
+            <div className="flex items-start space-x-6 animate-scale-in animate-delay-500 hover-lift transition-all duration-300">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
                   <svg className="w-8 h-8 text-[#04692F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,7 +80,7 @@ export default function Process() {
             </div>
 
             {/* Step 4 */}
-            <div className="flex items-start space-x-6">
+            <div className="flex items-start space-x-6 animate-scale-in animate-delay-600 hover-lift transition-all duration-300">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
                   <svg className="w-8 h-8 text-[#04692F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
