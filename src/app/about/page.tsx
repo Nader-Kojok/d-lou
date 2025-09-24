@@ -247,14 +247,13 @@ export default function AboutPage() {
               <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-6 font-poppins">
                 Découvrez notre approche
               </h3>
-              <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+              <div className="relative aspect-[9/16] max-w-md mx-auto rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
                 <iframe 
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/x9tfPTC8VmY?si=7JpONBlJgXfqlhv8" 
+                  src="https://www.instagram.com/reel/DKB85gdIYNx/embed" 
                   title="Pourquoi choisir D-LOU Legal Consulting"
                   frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowFullScreen
+                  scrolling="no"
                 ></iframe>
               </div>
               <p className="text-center text-white/80 mt-4 font-cabin">
