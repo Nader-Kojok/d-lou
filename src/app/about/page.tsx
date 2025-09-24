@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -134,10 +133,21 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Amadou Moustapha Kane */}
             <div className="text-center animate-scale-in animate-delay-100 group">
-              <div className="bg-gray-400 rounded-2xl overflow-hidden mb-6 aspect-square hover-lift transition-transform duration-300 group-hover:scale-105">
-                <div className="w-full h-full bg-gray-500 flex items-center justify-center">
-                  <span className="text-white text-lg font-poppins">Photo Amadou</span>
-                </div>
+              <div className="relative rounded-2xl overflow-hidden mb-6 aspect-square">
+                <Image 
+                  src="/team/amadou-inactive.webp" 
+                  alt="Amadou Moustapha Kane" 
+                  width={400} 
+                  height={400} 
+                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
+                />
+                <Image 
+                  src="/team/amadou-active.avif" 
+                  alt="Amadou Moustapha Kane - Active" 
+                  width={400} 
+                  height={400} 
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                />
               </div>
               <h3 className="text-xl font-bold text-white font-poppins mb-2">
                 Amadou Moustapha Kane
@@ -152,10 +162,21 @@ export default function AboutPage() {
             
             {/* Khady Touré */}
             <div className="text-center animate-scale-in animate-delay-200 group">
-              <div className="bg-gray-400 rounded-2xl overflow-hidden mb-6 aspect-square hover-lift transition-transform duration-300 group-hover:scale-105">
-                <div className="w-full h-full bg-gray-500 flex items-center justify-center">
-                  <span className="text-white text-lg font-poppins">Photo Khady</span>
-                </div>
+              <div className="relative rounded-2xl overflow-hidden mb-6 aspect-square">
+                <Image 
+                  src="/team/khady-inactive.avif" 
+                  alt="Khady Touré" 
+                  width={400} 
+                  height={400} 
+                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
+                />
+                <Image 
+                  src="/team/khady-active.avif" 
+                  alt="Khady Touré - Active" 
+                  width={400} 
+                  height={400} 
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                />
               </div>
               <h3 className="text-xl font-bold text-white font-poppins mb-2">
                 Khady Touré
@@ -170,10 +191,21 @@ export default function AboutPage() {
             
             {/* Serigne Fallou Kane */}
             <div className="text-center animate-scale-in animate-delay-300 group">
-              <div className="bg-gray-400 rounded-2xl overflow-hidden mb-6 aspect-square hover-lift transition-transform duration-300 group-hover:scale-105">
-                <div className="w-full h-full bg-gray-500 flex items-center justify-center">
-                  <span className="text-white text-lg font-poppins">Photo Serigne</span>
-                </div>
+              <div className="relative rounded-2xl overflow-hidden mb-6 aspect-square">
+                <Image 
+                  src="/team/serigne-inactive.avif" 
+                  alt="Serigne Fallou Kane" 
+                  width={400} 
+                  height={400} 
+                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
+                />
+                <Image 
+                  src="/team/serigne-active.avif" 
+                  alt="Serigne Fallou Kane - Active" 
+                  width={400} 
+                  height={400} 
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                />
               </div>
               <h3 className="text-xl font-bold text-white font-poppins mb-2">
                 Serigne Fallou Kane
@@ -184,18 +216,6 @@ export default function AboutPage() {
               <p className="text-white/90 font-cabin text-sm leading-relaxed">
                 Plus de 30 ans d&apos;expérience dans le secteur public, à la tête du pôle administratif.
               </p>
-              <div className="flex justify-center space-x-4 mt-4">
-                <div className="w-8 h-8 bg-[#04692F] rounded flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                  </svg>
-                </div>
-                <div className="w-8 h-8 bg-[#04692F] rounded flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                  </svg>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -207,10 +227,7 @@ export default function AboutPage() {
                  backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")'
                }}>
         
-        {/* Parallax decorative elements */}
-        <div className="parallax-element top-20 left-10 w-24 h-24 bg-white/10 rounded-full animate-parallax-slow animate-delay-100"></div>
-        <div className="parallax-element top-40 right-20 w-20 h-20 bg-white/5 rounded-full animate-parallax-medium animate-delay-300"></div>
-        <div className="parallax-element bottom-32 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-float animate-delay-500"></div>
+
         
         <div className="max-w-4xl mx-auto relative z-10">
           {/* Main Content */}
@@ -233,7 +250,7 @@ export default function AboutPage() {
               <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
                 <iframe 
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=example" 
+                  src="https://www.youtube.com/embed/x9tfPTC8VmY?si=7JpONBlJgXfqlhv8" 
                   title="Pourquoi choisir D-LOU Legal Consulting"
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -280,14 +297,6 @@ export default function AboutPage() {
                 <span className="text-2xl font-bold text-[#04692F] font-poppins">C</span>
               </div>
             </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <Link href="/">
-              <button className="bg-white hover:bg-gray-100 text-[#04692F] px-8 py-3 rounded-lg font-semibold font-cabin transition-all duration-300 hover:scale-105 hover:shadow-lg hover:-translate-y-1 active:scale-95 group">
-                <span className="transition-transform duration-300 group-hover:translate-x-1">Retour à l&apos;accueil</span>
-              </button>
-            </Link>
           </div>
         </div>
       </section>

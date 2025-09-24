@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function LegalHero() {
   return (
@@ -7,10 +8,7 @@ export default function LegalHero() {
                backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")'
              }}>
       
-      {/* Parallax decorative elements */}
-      <div className="parallax-element top-20 left-10 w-24 h-24 bg-white/10 rounded-full animate-parallax-slow animate-delay-100"></div>
-      <div className="parallax-element top-40 right-20 w-20 h-20 bg-white/5 rounded-full animate-parallax-medium animate-delay-300"></div>
-      <div className="parallax-element bottom-32 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-float animate-delay-500"></div>
+
       {/* Main Content */}
       <div className="text-center max-w-4xl mx-auto space-y-8 relative z-10 animate-fade-in-up">
         <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight font-poppins animate-slide-in-bottom">
@@ -22,11 +20,13 @@ export default function LegalHero() {
         </p>
         
         <div className="pt-6 animate-fade-in-up animate-delay-400">
-          <Button 
-            className="bg-white text-[#04692F] hover:bg-gray-100 px-8 py-4 text-lg font-semibold font-cabin rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1 group"
-          >
-            <span className="transition-transform duration-300 group-hover:translate-x-1">Contactez-nous</span>
-          </Button>
+          <Link href="/contact">
+            <Button 
+              className="bg-white text-[#04692F] hover:bg-gray-100 px-8 py-4 text-lg font-semibold font-cabin rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1 group"
+            >
+              <span className="transition-transform duration-300 group-hover:translate-x-1">Contactez-nous</span>
+            </Button>
+          </Link>
         </div>
       </div>
       
