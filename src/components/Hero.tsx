@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 z-10 bg-cover bg-center bg-no-repeat parallax-container" style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80")'}}>
+    <main className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 z-10 bg-cover bg-center bg-no-repeat parallax-container" style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/hero-image.webp")'}}>
       
       <Card className="bg-[#04692F] text-white p-6 sm:p-8 md:p-10 lg:p-12 max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto relative z-20 rounded-xl sm:rounded-2xl shadow-2xl border-0 animate-fade-in-up hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] relative z-10">
         <div className="text-center space-y-4 sm:space-y-6">
