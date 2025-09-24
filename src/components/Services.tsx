@@ -9,9 +9,9 @@ export default function Services() {
       <section className="bg-[#04692F] text-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="bg-[#04692F] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 lg:p-16">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 font-poppins">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 font-poppins">
               Expertise multidimensionnelle. Résultats concrets.
-            </h1>
+            </h2>
             <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 font-cabin leading-relaxed max-w-4xl">
               Chez D-LOU Consulting, nous voyons chaque défi comme une opportunité d&apos;accélérer votre installation et vos investissements au Sénégal. En collaborant avec vous, nous combinons notre réseau étendu et notre expertise en administration, relations publiques, et droit pour lever les obstacles les plus complexes. Grâce à notre connaissance du marché local et à notre suivi personnalisé, nos services garantissent des résultats tangibles, sécurisés et adaptés à vos besoins spécifiques.
             </p>

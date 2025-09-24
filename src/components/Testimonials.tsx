@@ -36,7 +36,7 @@ export default function Testimonials() {
                     <span className="text-white font-bold font-poppins text-sm sm:text-base">AM</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#1E1E1E] font-poppins text-sm sm:text-base">Amadou Mbaye</h4>
+                    <p className="font-semibold text-[#1E1E1E] font-poppins text-sm sm:text-base">Amadou Mbaye</p>
                     <p className="text-xs sm:text-sm text-gray-600 font-cabin">Entrepreneur, Dakar</p>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ export default function Testimonials() {
                     <span className="text-white font-bold font-poppins text-sm sm:text-base">FD</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#1E1E1E] font-poppins text-sm sm:text-base">Fatou Diop</h4>
+                    <p className="font-semibold text-[#1E1E1E] font-poppins text-sm sm:text-base">Fatou Diop</p>
                     <p className="text-xs sm:text-sm text-gray-600 font-cabin">Investisseuse, Paris</p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function Testimonials() {
                     <span className="text-white font-bold font-poppins text-sm sm:text-base">IS</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#1E1E1E] font-poppins text-sm sm:text-base">Ibrahima Sarr</h4>
+                    <p className="font-semibold text-[#1E1E1E] font-poppins text-sm sm:text-base">Ibrahima Sarr</p>
                     <p className="text-xs sm:text-sm text-gray-600 font-cabin">Directeur Commercial, Thiès</p>
                   </div>
                 </div>

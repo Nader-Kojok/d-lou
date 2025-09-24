@@ -72,7 +72,7 @@ export default function Header() {
             />
           </div>
           <div className="transition-all duration-300">
-            <h1 className="text-xl sm:text-2xl font-bold font-poppins transition-colors duration-300 group-hover:text-[#04692F]">D-LOU</h1>
+            <div className="text-xl sm:text-2xl font-bold font-poppins transition-colors duration-300 group-hover:text-[#04692F]">D-LOU</div>
             <p className="text-xs sm:text-sm text-gray-300 font-cabin transition-colors duration-300 group-hover:text-gray-100">Legal consulting</p>
           </div>
         </Link>
