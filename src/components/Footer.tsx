@@ -198,7 +198,15 @@ export default function Footer() {
             </div>
             
             <p className="text-xs sm:text-sm text-gray-400">
-              Developed with 💚 by Agence Arcane
+              Developed with 💚 by{" "}
+              <a 
+                href="https://agencearcane.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors underline"
+              >
+                Agence Arcane
+              </a>
             </p>
           </div>
         </div>
